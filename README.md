@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Live Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-product-preview-card-component-Yi6k2u_wxG)
+- Live Site URL: [Live Site](https://product-card-nine-phi.vercel.app/)
 
 ## My process
 
@@ -74,7 +74,7 @@ I want to explore:
 
 ## Author
 
-- Website - [Amiko Elvis](https://www.your-site.com)
+- Website - [Amiko Elvis](https://product-card-nine-phi.vercel.app/)
 - Frontend Mentor - [@amikoelvis](https://www.frontendmentor.io/profile/amikoelvis)
 - Twitter - [@Elvis Amiko](https://www.twitter.com/ElvisAmiko)
 
