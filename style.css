@@ -1,0 +1,172 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Product Card Block */
+.product-card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.6em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 375px; /* Matches mobile design width */
+}
+
+/* Image Element */
+.product-card__image {
+    display: block;
+}
+
+.product-card__image img {
+    max-inline-size: 100%;
+    border-radius: 0.6em 0.6em 0 0;
+    block-size: auto;
+}
+
+/* Content Element */
+.product-card__content {
+    padding: 1.5em;
+}
+
+/* Category Element */
+.product-card__category {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+/* Title Element */
+.product-card__title {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+/* Description Element */
+.product-card__description {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-block-end: 1.5em;
+}
+
+/* Prices Element */
+.product-card__prices {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-block-end: 1em;
+}
+
+.product-card__price {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.product-card__price--old {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+/* Button Element */
+.product-card__button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.product-card__button:hover, .product-card__button:focus {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.product-card__button-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+}
+
+.attribution a:hover, .attribution a:focus {
+    text-decoration: underline;
+}
+
+/* Desktop Layout */
+@media (min-width: 700px) {
+    .product-card {
+        flex-direction: row;
+        max-width: 600px; /* Slightly wider than mobile, proportional to 1440px design */
+    }
+
+    .product-card__image img {
+        max-inline-size: 100%;
+        block-size: 100%;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .product-card__content {
+        width: 50%;
+        padding: 2em;
+    }
+
+    .product-card__title {
+        margin: 1em 0;
+    }
+
+    .product-card__prices {
+        margin-block-end: 2em;
+    }
+}
+
